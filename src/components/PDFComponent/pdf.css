@@ -1,0 +1,29 @@
+.pdf{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.pdf-name{
+    color: var(--link-main);
+    margin-bottom: .25em;
+}
+.pdf-info{
+    font-size: large;
+    color: var(--dark-blue);
+}
+.pdf-download{
+    margin-right: .5em;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    min-width: 2em;
+    background-color: var(--dark-blue);
+    background-image: url('../../../public/ico/download.png');
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .4s ease-in-out;
+}
+.pdf-download:hover{
+    background-color: var(--link-main);
+}

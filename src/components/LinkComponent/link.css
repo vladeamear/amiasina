@@ -1,0 +1,16 @@
+.links-link{
+    text-decoration: none;
+}
+.links-link span:nth-child(1){
+    color: var(--link-main);
+}
+.links-link span:last-child{
+    font-size: large;
+    color: var(--dark-blue);
+}
+.links-link:hover span:nth-child(1){
+    color: var(--link-main__hover);
+}
+.links-link:hover span:last-child{
+    color: var(--link-secondary__hover);
+}

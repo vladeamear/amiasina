@@ -1,0 +1,73 @@
+/* https://coolors.co/palette/f4f1de-e07a5f-3d405b-81b29a-f2cc8f */
+.desktop-nav {
+    font-family: 'Montserrat', sans-serif;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+    background-color: var(--bg-nav);
+    backdrop-filter: blur(7px);
+    height: 80px;
+    border-bottom: 1px solid var(--dark-blue);
+}
+
+.menu{
+    width: 1080px;
+    max-width: 1080px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-block {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.menu-block:first-child {
+    padding-left: 30px;
+}
+.menu-block:last-child {
+    padding-right: 30px;
+}
+
+.menu-link {
+    color: var(--dark-blue);
+    text-decoration: none;
+    transition: .2s;
+}
+.menu-link:hover {
+    color: var(--link-secondary__hover);
+    transform: translateY(-2px);
+}
+.menu-link.active {
+    color: var(--link-main);
+    pointer-events: none;
+}
+
+.menu-inst {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background: url("../../../public/ico/inst.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: .2s;
+}
+.menu-inst:hover {
+    transform: translateY(-2px);
+}
+.menu-mail {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background: url("../../../public/ico/yamail.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: .2s;
+}
+.menu-mail:hover {
+    transform: translateY(-2px);
+}

@@ -1,0 +1,34 @@
+.theme-toggle {
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: .2s;
+}
+.theme-toggle:hover {
+    transform: translateY(-2px);
+}
+.theme-toggle.light {
+    background-image: url('../../../public/ico/moon.png');
+}
+.theme-toggle.dark {
+    background-image: url('../../../public/ico/sun.png');
+}
+
+@media (max-width: 850px) {
+    .theme-toggle {
+        width: 34px;
+        margin-right: 28px;
+        margin-left: 28px;
+        padding: 0;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .theme-toggle:hover {
+        transform: none;
+    }
+}

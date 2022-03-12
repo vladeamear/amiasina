@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    color: var(--font-color);
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--bg-page);
+    background-attachment: fixed;
+}
+body::-webkit-scrollbar {
+    width: .3em;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--bg-card);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: transparent;
+    background-color: var(--dark-blue);
+    border-radius: .1em;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+    background-color: var(--link-main);
+    border-radius: .1em;
+}
+input, textarea, button, select, a {
+  -webkit-tap-highlight-color: #00000000;
+}
+
+
+.nowrap{
+    white-space: nowrap;
+}
+
+h1, h2, h3{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0;
+}
+h1:last-child, p:last-child, .pdf:last-child{
+    margin-bottom: 0;
+}
+p{
+    text-align: justify;
+    margin-top: 0;
+}
+blockquote {
+    margin: 0;
+    margin-top: 2em;
+    margin-bottom: .7em;
+    margin-left: 4em;
+    text-align: right;
+    font-style: italic;
+}
+figcaption {
+    text-align: right;
+}
+ul {
+    list-style: inside;
+    padding-left: 1em;
+    margin-block-start: .5em;
+}
+::marker {
+    color: var(--link-main);
+}
+
+section{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    transition: .5s;
+    transition-property: opacity, transform;
+    padding-top: 80px;
+}
+@media (max-width: 850px) {
+    section {
+        padding-top: 60px;
+    }
+}
+.two-column{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: stretch;
+}
+@media (max-width: 850px) {
+    .two-column{
+        flex-direction: column;
+    }
+    .two-column__reverse{
+        flex-direction: column-reverse;
+    }
+}
+.column{
+    flex: 1;
+    box-sizing: border-box;
+}
+.screen{
+    margin: auto;
+    width: 1080px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.screen:first-child{
+    margin-top: 20px;
+}
+@media (max-width: 1080px){
+    .screen{
+        width: 100%;
+    }
+}
+
+.card{
+    padding: 30px;
+    background-color: var(--bg-card);
+    box-shadow:  10px 10px 20px var(--card-box-shadow__down),
+    -10px -10px 20px var(--card-box-shadow__up);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+}

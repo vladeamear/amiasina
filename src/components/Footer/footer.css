@@ -1,0 +1,58 @@
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: large;
+    max-width: 1080px;
+    margin: auto;
+    position: relative;
+    color: var(--font-color);
+    display: flex;
+    justify-content: space-between;
+}
+.footer-block {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+@media (max-width: 850px){
+    footer{
+        flex-direction: column;
+    }
+    .footer-block {
+        margin-bottom: 1em;
+    }
+}
+.footer-links{
+    text-align: right;
+}
+.contact{
+    color: var(--font-color);
+    text-decoration: none;
+}
+.contact:hover{
+    color: var(--link-main);
+}
+
+.inst::before {
+    content: "";
+    display: block;
+    border-radius: 3px;
+    background: url("../../../public/ico/inst.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 2px 6px 0 0;
+}
+.mail::before {
+    content: "";
+    display: block;
+    border-radius: 3px;
+    background: url("../../../public/ico/yamail.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 2px 6px 0 0;
+}
