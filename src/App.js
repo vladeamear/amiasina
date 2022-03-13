@@ -1,5 +1,7 @@
-import './style.css'
-import './colors.css'
+import './css/style.css'
+import './css/colors.css'
+import './css/fonts.css'
+import './css/icons.css'
 import { useEffect, useState } from "react"
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom"
 import { AboutMe } from "./pages/AboutMe/AboutMe"

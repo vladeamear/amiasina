@@ -1,11 +1,7 @@
 import LinkComponent from "../../components/LinkComponent/LinkComponent"
-import { Helmet } from 'react-helmet'
 
 export const Links = () => {
     return(<>
-    <Helmet>
-        <title>Анастасия Мясина | Полезные ссылки</title>
-    </Helmet>
     <section id="links">
         <div className="screen card">
             <h1>Полезные ссылки</h1>

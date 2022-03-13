@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap');
+
+:root {
+    --font__main: 'Roboto', sans-serif;
+    --font__header: 'Montserrat', sans-serif;
+}

@@ -5,19 +5,19 @@ import './navbar.css'
 export const NavBar = () => {
     return(<>
         <nav className="desktop-nav">
-            <div className="menu">
-                <div className="menu-block">
-                    <NavLink className="menu-link" to="/">Обо мне</NavLink>
-                    <NavLink className="menu-link" to="/links">Полезные ссылки</NavLink>
-                    <NavLink className="menu-link" to="/exams">Подготовка к экзаменам</NavLink>
-                    <NavLink className="menu-link" to="/vpr">ВПР</NavLink>
+            <div className="desktop-menu">
+                <div className="desktop-menu__block">
+                    <NavLink className="desktop-menu__link" to="/">Обо мне</NavLink>
+                    <NavLink className="desktop-menu__link" to="/links">Полезные ссылки</NavLink>
+                    <NavLink className="desktop-menu__link" to="/exams">Подготовка к экзаменам</NavLink>
+                    <NavLink className="desktop-menu__link" to="/vpr">ВПР</NavLink>
                 </div>
-                <div className="menu-block">
+                <div className="desktop-menu__block">
                     <ThemeToggle />
                 </div>
-                <div className="menu-block">
-                    <a className="menu-inst" href="https://www.instagram.com/anastasia.pro.geo/" target="_blank" rel="noreferrer"> </a>
-                    <a className="menu-mail" href="mailto:anastasia.miasina@ya.ru" target="_blank" rel="noreferrer"> </a>
+                <div className="desktop-menu__block">
+                    <a className="desktop-menu__inst" href="https://www.instagram.com/anastasia.pro.geo/" target="_blank" rel="noreferrer"> </a>
+                    <a className="desktop-menu__mail" href="mailto:anastasia.miasina@ya.ru" target="_blank" rel="noreferrer"> </a>
                 </div>
             </div>
         </nav>

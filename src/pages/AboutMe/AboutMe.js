@@ -3,13 +3,9 @@ import avatar from './avatar.jpg'
 import article2020 from './article-2020.pdf'
 import article2021 from './article-2021.pdf'
 import PDFComponent from '../../components/PDFComponent/PDFComponent'
-import { Helmet } from 'react-helmet'
 
 export const AboutMe = () => {
     return (<>
-    <Helmet>
-        <title>Анастасия Мясина</title>
-    </Helmet>
     <section id="aboutme">
         <div className="screen two-column two-column__reverse">
             <div className="column avatar">
@@ -17,24 +13,21 @@ export const AboutMe = () => {
             </div>
             <div className="column card">
                 <p>
-                    Рада приветствовать Вас на личном сайте! Меня зовут <b>Мясина Анастасия Александровна</b>, я преподаю географию в школе
-                    г. Санкт-Петербург.
+                    Рада приветствовать Вас <span className="nowrap">на личном</span> сайте! Меня зовут <span className="nowrap bold">Мясина Анастасия Александровна</span>, я преподаю географию в школе <span className="nowrap">г. Санкт-Петербург.</span>
                 </p>
-                <p>Профессиональные интересы:
-                    <ul>
-                        <li>мотивация учащихся,</li>
-                        <li>страноведение,</li>
-                        <li>экология России,</li>
-                        <li>РСО.</li>
-                    </ul>
-                </p>
-                <p>Увлечения:
-                    <ul>
-                        <li>фотография,</li>
-                        <li>вышивка,</li>
-                        <li>рукоделие</li>
-                    </ul>
-                </p>
+                <p>Профессиональные интересы:</p>
+                <ul>
+                    <li>мотивация учащихся,</li>
+                    <li>страноведение,</li>
+                    <li>экология России,</li>
+                    <li>РСО.</li>
+                </ul>
+                <p>Увлечения:</p>
+                <ul>
+                    <li>фотография,</li>
+                    <li>вышивка,</li>
+                    <li>рукоделие</li>
+                </ul>
                 <blockquote>«Учитель прикасается к&nbsp;вечности: никто не&nbsp;может сказать, где кончается его влияние»</blockquote>
                 <figcaption>Генри Адамс</figcaption>
             </div>
@@ -63,7 +56,7 @@ export const AboutMe = () => {
             />
             <PDFComponent
                 link={article2021}
-                name="ПРАКТИЧЕСКИЙ АСПЕКТ ИСПОЛЬЗОВАНИЯ СУБЪЕКТНООРИЕНТИРОВАННЫХ ТЕХНОЛОГИЙ В ОБРАЗОВАТЕЛЬНОМ ПРОЦЕССЕ ШКОЛЬНИКОВ"
+                name="ПРАКТИЧЕСКИЙ АСПЕКТ ИСПОЛЬЗОВАНИЯ СУБЪЕКТНО-ОРИЕНТИРОВАННЫХ ТЕХНОЛОГИЙ В ОБРАЗОВАТЕЛЬНОМ ПРОЦЕССЕ ШКОЛЬНИКОВ"
                 size="808Кб"
             />
         </div>

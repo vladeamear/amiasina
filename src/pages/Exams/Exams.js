@@ -1,15 +1,11 @@
 import LinkComponent from "../../components/LinkComponent/LinkComponent"
 import PDFComponent from "../../components/PDFComponent/PDFComponent"
-import { Helmet } from 'react-helmet'
 
 import kodifoge from "./kodifikator_oge_21-22.pdf"
 import kodifege from "./kodifikator_ege_21-22.pdf"
 
 export const Exams = () => {
     return(<>
-    <Helmet>
-        <title>Анастасия Мясина | Подготовка к экзаменам</title>
-    </Helmet>
     <section id="exams">
         <div className="screen card">
             <h1>Подготовка к экзаменам</h1>
