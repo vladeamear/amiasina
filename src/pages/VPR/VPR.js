@@ -2,13 +2,9 @@ import PDFComponent from '../../components/PDFComponent/PDFComponent'
 import kl6 from './klass_6.pdf'
 import kl7 from './klass_7.pdf'
 import kl8 from './klass_8.pdf'
-import { Helmet } from 'react-helmet'
 
 export const VPR = () => {
     return(<>
-    <Helmet>
-        <title>Анастасия Мясина | ВПР</title>
-    </Helmet>
     <section id="vpr">
         <div className="screen card">
             <h1>ВПР (Всероссийская проверочная работа)</h1>

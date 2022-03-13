@@ -3,13 +3,9 @@ import avatar from './avatar.jpg'
 import article2020 from './article-2020.pdf'
 import article2021 from './article-2021.pdf'
 import PDFComponent from '../../components/PDFComponent/PDFComponent'
-import { Helmet } from 'react-helmet'
 
 export const AboutMe = () => {
     return (<>
-    <Helmet>
-        <title>Анастасия Мясина</title>
-    </Helmet>
     <section id="aboutme">
         <div className="screen two-column two-column__reverse">
             <div className="column avatar">
