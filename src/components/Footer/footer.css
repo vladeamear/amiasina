@@ -36,7 +36,7 @@ footer{
     content: "";
     display: block;
     border-radius: 3px;
-    background: url("../../../public/ico/inst.png") no-repeat;
+    background: var(--icon__inst) no-repeat;
     background-position: center;
     background-size: cover;
     width: 20px;
@@ -48,7 +48,7 @@ footer{
     content: "";
     display: block;
     border-radius: 3px;
-    background: url("../../../public/ico/yamail.png") no-repeat;
+    background: var(--icon__mail) no-repeat;
     background-position: center;
     background-size: cover;
     width: 20px;

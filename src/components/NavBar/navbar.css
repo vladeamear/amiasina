@@ -1,6 +1,5 @@
-/* https://coolors.co/palette/f4f1de-e07a5f-3d405b-81b29a-f2cc8f */
 .desktop-nav {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font__header);
     top: 0;
     left: 0;
     width: 100%;
@@ -14,60 +13,56 @@
     border-bottom: 1px solid var(--dark-blue);
 }
 
-.menu{
+.desktop-menu{
     width: 1080px;
     max-width: 1080px;
     height: 100%;
     display: flex;
     justify-content: space-between;
 }
-.menu-block {
+.desktop-menu__block {
     display: flex;
     align-items: center;
     gap: 30px;
 }
-.menu-block:first-child {
+.desktop-menu__block:first-child {
     padding-left: 30px;
 }
-.menu-block:last-child {
+.desktop-menu__block:last-child {
     padding-right: 30px;
 }
 
-.menu-link {
+.desktop-menu__link {
     color: var(--dark-blue);
     text-decoration: none;
     transition: .2s;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
-.menu-link:hover {
+.desktop-menu__link:hover {
     color: var(--link-secondary__hover);
-    transform: translateY(-2px);
+    padding-bottom: 2px;
+    margin-bottom: 2px;
 }
-.menu-link.active {
+.desktop-menu__link.active {
     color: var(--link-main);
     pointer-events: none;
 }
 
-.menu-inst {
+
+.desktop-menu__inst {
+    background: var(--icon__inst);
+}
+.desktop-menu__mail {
+    background: var(--icon__mail);
+}
+.desktop-menu__inst, .desktop-menu__mail {
     width: 30px;
     height: 30px;
     border-radius: 5px;
-    background: url("../../../public/ico/inst.png") no-repeat;
-    background-position: center;
-    background-size: cover;
-    transition: .2s;
+    background-size: contain;
+    transition: .3s;
 }
-.menu-inst:hover {
-    transform: translateY(-2px);
-}
-.menu-mail {
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    background: url("../../../public/ico/yamail.png") no-repeat;
-    background-position: center;
-    background-size: cover;
-    transition: .2s;
-}
-.menu-mail:hover {
+.desktop-menu__inst:hover, .desktop-menu__mail:hover {
     transform: translateY(-2px);
 }

@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap');
-
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font__main);
     font-size: large;
     color: var(--font-color);
     padding: 0;
@@ -32,13 +30,15 @@ input, textarea, button, select, a {
   -webkit-tap-highlight-color: #00000000;
 }
 
-
 .nowrap{
     white-space: nowrap;
 }
+.bold {
+    font-weight: 600;
+}
 
 h1, h2, h3{
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font__header);
     margin-top: 0;
 }
 h1:last-child, p:last-child, .pdf:last-child{
