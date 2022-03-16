@@ -1,8 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { ThemeToggle } from '../ThemeToggle/ThemeToggle'
 import './navbar.css'
-
-export const NavBar = () => {
+ const NavBar = () => {
     return(<>
         <nav className="desktop-nav">
             <div className="desktop-menu">
@@ -23,3 +22,5 @@ export const NavBar = () => {
         </nav>
     </>)
 }
+
+export default NavBar
