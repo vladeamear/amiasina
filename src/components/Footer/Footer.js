@@ -1,6 +1,6 @@
 import './footer.css'
 
-export const Footer = () => {
+const Footer = () => {
     return(<>
     <footer>
         <div className="footer-block">
@@ -14,3 +14,5 @@ export const Footer = () => {
     </footer>
     </>)
 }
+
+export default Footer

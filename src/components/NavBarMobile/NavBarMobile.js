@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { ThemeToggle } from '../ThemeToggle/ThemeToggle'
 import './navbarmobile.css'
 
-export const NavBarMobile = () => {
+const NavBarMobile = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     const toggle = () => {
@@ -40,3 +40,5 @@ export const NavBarMobile = () => {
         </nav>
     </>)
 }
+
+export default NavBarMobile

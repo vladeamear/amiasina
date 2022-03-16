@@ -9,9 +9,12 @@ export const Section = (props) => {
 }
 
 export const ImgWrapper = (props) => {
+    let className = 'img-wrapper'
+    if (props.col) className += ` col-${props.col}`
+    if (props.row) className += ` col-${props.row}`
     return(
-        <div className='img-wrapper'>
-            <img src={props.src} alt={props.alt}/>
+        <div className={className}>
+            <img src={props.src} alt={props.alt} />
         </div>
     )
 }

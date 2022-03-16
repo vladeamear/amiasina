@@ -3,7 +3,7 @@ body{
     font-size: large;
     color: var(--font-color);
     padding: 0;
-    padding-top: 80px;
+    padding-top: 100px;
     margin: 0;
     min-height: calc(100vh - 80px);
     background-color: var(--bg-page);
@@ -11,7 +11,7 @@ body{
 }
 @media (max-width: 850px) {
     body {
-        padding-top: 60px;
+        padding-top: 80px;
         min-height: calc(100vh - 60px);
     }
 }
@@ -109,11 +109,3 @@ ul {
     }
 }
 
-.card{
-    padding: 30px;
-    background-color: var(--bg-card);
-    box-shadow:  10px 10px 20px var(--card-box-shadow__down),
-    -10px -10px 20px var(--card-box-shadow__up);
-    border: 1px solid var(--card-border);
-    border-radius: 20px;
-}
