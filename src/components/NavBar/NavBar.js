@@ -15,7 +15,7 @@ import './navbar.css'
                     <ThemeToggle />
                 </div>
                 <div className="desktop-menu__block">
-                    <a className="desktop-menu__inst" href="https://www.instagram.com/anastasia.pro.geo/" target="_blank" rel="noreferrer"> </a>
+                    <a className="desktop-menu__tg" href="https://t.me/anastasia_pro_geo" target="_blank" rel="noreferrer"> </a>
                     <a className="desktop-menu__mail" href="mailto:anastasia.miasina@ya.ru" target="_blank" rel="noreferrer"> </a>
                 </div>
             </div>

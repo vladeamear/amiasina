@@ -6,7 +6,9 @@
     background-position: center;
     background-size: cover;
     cursor: pointer;
-    transition: .2s;
+    transform: none;
+    transition-duration: .2s;
+    transition-property: transform;
 }
 .theme-toggle:hover {
     transform: translateY(-2px);

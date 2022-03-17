@@ -50,7 +50,7 @@ section{
     }
 }
 
-.img-wrapper, .img-wrapper .lazyload-wrapper{
+.img-wrapper{
     height: 100%;
 }
 .img-wrapper img{

@@ -22,7 +22,7 @@
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
-    transition: .4s ease-in-out;
+    transition: .2s ease-in-out;
 }
 .pdf-download:hover{
     background-color: var(--link-main);

@@ -34,7 +34,7 @@ const NavBarMobile = () => {
                 <NavLink className="mobile-menu__link" to="/vpr" onClick={hide}>ВПР</NavLink>
             </div>
             <div className="mobile-menu__block__row">
-                <a className="mobile-menu__inst" href="https://www.instagram.com/anastasia.pro.geo/" target="_blank" rel="noreferrer"> </a>
+                <a className="mobile-menu__tg" href="https://t.me/anastasia_pro_geo" target="_blank" rel="noreferrer"> </a>
                 <a className="mobile-menu__mail" href="mailto:anastasia.miasina@ya.ru" target="_blank" rel="noreferrer"> </a>
             </div>
         </nav>
