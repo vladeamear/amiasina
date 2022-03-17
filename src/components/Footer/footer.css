@@ -9,6 +9,9 @@ footer{
     display: flex;
     justify-content: space-between;
 }
+footer p {
+    text-align: left;
+}
 .footer-block {
     padding-right: 30px;
     padding-left: 30px;
@@ -32,11 +35,11 @@ footer{
     color: var(--link-main);
 }
 
-.inst::before {
+.tg::before {
     content: "";
     display: block;
     border-radius: 3px;
-    background: var(--icon__inst) no-repeat;
+    background: var(--icon__tg) no-repeat;
     background-position: center;
     background-size: cover;
     width: 20px;
