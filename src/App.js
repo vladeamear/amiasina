@@ -8,6 +8,7 @@ import Footer from './components/Footer/Footer'
 import NavBar from './components/NavBar/NavBar'
 import NavBarMobile from './components/NavBarMobile/NavBarMobile'
 import Loading from './components/Loading/Loading'
+import Error from './pages/Error/Error'
 
 const AboutMe = lazy(() => import("./pages/AboutMe/AboutMe"))
 const Exams = lazy(() => import("./pages/Exams/Exams"))
@@ -62,7 +63,7 @@ function App() {
             } />
             <Route
                 path="*"
-                element={<Navigate to="/" />}
+                element={<Error/>}
             />
             <Route path="/vpr" element={
               <React.Suspense fallback={<Loading />}>
