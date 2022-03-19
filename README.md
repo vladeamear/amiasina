@@ -7,7 +7,8 @@
 
 Используемые при разработке модули:
 - [React Router DOM](https://www.npmjs.com/package/react-router-dom)
-- ~~[React Helmet](https://www.npmjs.com/package/react-helmet)~~ В версии ```fix 13.03.22[2]``` принял решение отказаться от данного модуля ввиду забагованности.
+- [React Helmet](https://www.npmjs.com/package/react-helmet)
+- [React Snap](https://www.npmjs.com/package/react-snap)
 
 Дополнительные технологии:
 - [OnLine Hyphenation](https://www.plazoo.com/ru/tools.asp) 
