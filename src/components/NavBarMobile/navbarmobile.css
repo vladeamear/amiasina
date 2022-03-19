@@ -11,6 +11,11 @@
     background-color: var(--bg-nav);
     backdrop-filter: blur(7px);
 }
+@media (min-width: 850px) {
+    .mobile__header {
+        display: none;
+    }
+}
 
 
 .mobile-menu__toggle {

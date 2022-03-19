@@ -2,7 +2,7 @@ import './css/style.css'
 import './css/colors.css'
 import './css/fonts.css'
 import './css/icons.css'
-import React, { lazy, useEffect, useState } from "react"
+import React, { lazy, useEffect } from "react"
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom"
 import Footer from './components/Footer/Footer'
 import NavBar from './components/NavBar/NavBar'
@@ -25,35 +25,11 @@ function ScrollToTop() {
   return null;
 }
 
-function getWindowDimensions() {
-  const { innerWidth: width } = window;
-  return {
-    width
-  };
-}
-
-function useWindowDimensions() {
-  const [windowDimensions, setWindowDimensions] = useState(
-    getWindowDimensions()
-  );
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowDimensions(getWindowDimensions());
-    }
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  return windowDimensions;
-}
-
 function App() {
-  const { width } = useWindowDimensions();
   return (
       <BrowserRouter>
-        {(width > 850) ? <NavBar /> : <NavBarMobile />}
+        <NavBar />
+        <NavBarMobile />
         <ScrollToTop />
           <Routes>
             <Route index path="/" element={

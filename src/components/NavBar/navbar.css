@@ -4,13 +4,19 @@
     left: 0;
     width: 100%;
     position: fixed;
-    display: flex;
+    display: none;
     justify-content: center;
     z-index: 99;
     background-color: var(--bg-nav);
     backdrop-filter: blur(7px);
     height: 80px;
     border-bottom: 1px solid var(--dark-blue);
+}
+
+@media (min-width: 850px) {
+    .desktop-nav {
+        display: flex;
+    }
 }
 
 .desktop-menu{
