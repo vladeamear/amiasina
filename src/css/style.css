@@ -3,17 +3,11 @@ body{
     font-size: large;
     color: var(--font-color);
     padding: 0;
-    padding-top: 100px;
     margin: 0;
-    min-height: calc(100vh - 100px);
+    padding-top: 80px;
+    min-height: calc(100vh - 80px);
     background-color: var(--bg-page);
     background-attachment: fixed;
-}
-@media (max-width: 850px) {
-    body {
-        padding-top: 80px;
-        min-height: calc(100vh - 80px);
-    }
 }
 body::-webkit-scrollbar {
     width: .3em;

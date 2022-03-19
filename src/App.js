@@ -6,7 +6,6 @@ import React, { lazy, useEffect } from "react"
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom"
 import Footer from './components/Footer/Footer'
 import NavBar from './components/NavBar/NavBar'
-import NavBarMobile from './components/NavBarMobile/NavBarMobile'
 import Loading from './components/Loading/Loading'
 import Error from './pages/Error/Error'
 
@@ -29,7 +28,6 @@ function App() {
   return (
       <BrowserRouter>
         <NavBar />
-        <NavBarMobile />
         <ScrollToTop />
           <Routes>
             <Route index path="/" element={
