@@ -4,10 +4,15 @@ import article2020 from './article-2020.pdf'
 import article2021 from './article-2021.pdf'
 import PDFComponent from '../../components/PDFComponent/PDFComponent'
 import { Card, ImgWrapper, Section } from '../../components/Section/Section'
+import Helmet from 'react-helmet'
 
 const AboutMe = () => {
 
     return (<>
+        <Helmet>
+            <title>Анастасия Мясина</title>
+            <meta name='description' content='Главная страница личного сайта учителя географии Мясиной Анастасии' />
+        </Helmet>
         <Section>
             <ImgWrapper col={1} src={avatar} alt="Моя фотография" />
             <Card col={3}>

@@ -3,7 +3,7 @@ import './css/colors.css'
 import './css/fonts.css'
 import './css/icons.css'
 import React, { lazy, useEffect, useState } from "react"
-import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom"
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom"
 import Footer from './components/Footer/Footer'
 import NavBar from './components/NavBar/NavBar'
 import NavBarMobile from './components/NavBarMobile/NavBarMobile'
