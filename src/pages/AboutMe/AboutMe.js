@@ -17,7 +17,7 @@ const AboutMe = () => {
             <ImgWrapper col={1} src={avatar} alt="Моя фотография" />
             <Card col={3}>
                 <p>
-                    Ра&shy;да при&shy;вет&shy;ст&shy;во&shy;вать Вас на&nbsp;лич&shy;ном сай&shy;те! Ме&shy;ня зо&shy;вут <span className="bold">Мя&shy;си&shy;на Ана&shy;ста&shy;сия Алек&shy;сан&shy;дров&shy;на</span>, я пре&shy;по&shy;даю гео&shy;гра&shy;фию в шко&shy;ле <span className="nowrap">г. Санкт-Петербург.</span>
+                    Ра&shy;да при&shy;вет&shy;ст&shy;во&shy;вать Вас на&nbsp;лич&shy;ном сай&shy;те! Ме&shy;ня зо&shy;вут <span className="highlight">Мя&shy;си&shy;на Ана&shy;ста&shy;сия Алек&shy;сан&shy;дров&shy;на</span>, я пре&shy;по&shy;даю гео&shy;гра&shy;фию в шко&shy;ле <span className="nowrap">г. Санкт-Петербург.</span>
                 </p>
                 <p>Профессиональные интересы:</p>
                 <ul>

@@ -1,6 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&family=Lora:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=PT+Serif&display=swap');
 
 :root {
-    --font__main: 'Roboto', sans-serif;
-    --font__header: 'Montserrat', sans-serif;
+    /* --font__main: 'Roboto', sans-serif;
+    --font__header: 'Montserrat', sans-serif; */
+    /* --font__main: 'Source Sans 3', sans-serif;
+    --font__header: 'Lora', serif; */
+    --font__main: 'PT Serif', serif;
+    --font__header: 'IBM Plex Sans', sans-serif;
 }

@@ -10,13 +10,14 @@ function LinkComponent(props) {
         }
     }
 
-    return(<>
-    <p><a href={props.link} className="links-link" target="_blank" rel="noreferrer">
-        <span>{props.name}</span>
-        <br />
-        <span>{shortenlink(props.link)}</span>
-    </a></p>
-    </>)
+    return(
+        <div className="links-link">
+            <a href={props.link} className="" target="_blank" rel="noreferrer">
+                <span>{props.name}</span>
+                <span>{shortenlink(props.link)}</span>
+            </a>
+        </div>
+    )
 }
 
 export default LinkComponent
