@@ -3,27 +3,38 @@
     align-items: center;
     margin-bottom: 1em;
 }
-.pdf-name{
-    color: var(--link-main);
-    margin-bottom: .25em;
-}
-.pdf-info{
-    font-size: large;
-    color: var(--dark-blue);
-}
+
 .pdf-download{
     margin-right: .5em;
     border-radius: 50%;
-    width: 2em;
-    height: 2em;
-    min-width: 2em;
-    background-color: var(--dark-blue);
-    background-image: url('../../../public/ico/download.png');
-    background-size: 60%;
-    background-position: center;
+    width: 2.5em;
+    height: 2.5em;
+    min-width: 2.5em;
+    background-image: url('../../../public/ico/down-arrow.png');
+    background-size: 110%;
     background-repeat: no-repeat;
+    background-position: center;
     transition: .2s ease-in-out;
+    border: 2px solid transparent;
+    box-sizing: border-box;
 }
 .pdf-download:hover{
-    background-color: var(--link-main);
+    border-color: var(--dark-blue);
+}
+
+.pdf-info span:nth-child(1){
+    color: var(--link-main);
+    line-height: 1.5em;
+    display: block;
+}
+.pdf-info span:last-child{
+    font-size: large;
+    color: var(--dark-blue);
+    line-height: 1.5em;
+    display: block;
+    margin-bottom: 18px;
+}
+
+.pdf-info:last-child span:last-child {
+    margin-bottom: 0;
 }

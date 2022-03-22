@@ -1,16 +1,28 @@
 .links-link{
+    max-width: max-content;
+}
+.links-link a {
     text-decoration: none;
 }
 .links-link span:nth-child(1){
     color: var(--link-main);
+    line-height: 1.5em;
+    display: block;
 }
 .links-link span:last-child{
     font-size: large;
     color: var(--dark-blue);
+    line-height: 1.5em;
+    display: block;
+    margin-bottom: 18px;
 }
 .links-link:hover span:nth-child(1){
     color: var(--link-main__hover);
 }
 .links-link:hover span:last-child{
     color: var(--link-secondary__hover);
+}
+
+.links-link:last-child span:last-child {
+    margin-bottom: 0;
 }

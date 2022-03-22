@@ -34,12 +34,13 @@ input, textarea, button, select, a {
 .nowrap{
     white-space: nowrap;
 }
-.bold {
-    font-weight: 600;
+.highlight {
+    font-family: var(--font__header);
 }
 
 h1, h2, h3{
     font-family: var(--font__header);
+    font-weight: normal;
     margin-top: 0;
 }
 h1:last-child, p:last-child, .pdf:last-child{
@@ -48,6 +49,7 @@ h1:last-child, p:last-child, .pdf:last-child{
 p{
     text-align: justify;
     margin-top: 0;
+    line-height: 1.5em;
 }
 blockquote {
     margin: 0;

@@ -147,6 +147,7 @@
 /* Nav */
 
 .mobile-nav {
+    font-family: var(--font__header);
     position: fixed;
     z-index: 90;
     overflow: hidden;
