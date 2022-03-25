@@ -10,7 +10,6 @@
     }
     .menu {
         width: 100%;
-        /* max-width: 1140px; */
     }
 }
 @media (min-width: 850px) {
@@ -22,8 +21,9 @@
         display: block;
     }
     .menu {
-        width: calc(100% - 60px);
-        max-width: 1140px;
+        width: 100%;
+        max-width: 1158px;
+        margin: 0 21px;
     }
 }
 

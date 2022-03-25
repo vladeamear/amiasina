@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react'
+import { BsMoonStarsFill, BsFillSunFill } from "react-icons/bs"
 import './themetoggle.css'
 
 export const ThemeToggle = () => {
-    const body = document.body
-
     const [theme, setTheme] = useState(
         localStorage.getItem('theme') 
         ? localStorage.getItem('theme') 
@@ -21,16 +20,16 @@ export const ThemeToggle = () => {
     }
 
     useEffect(() => {
-        body.classList = theme
+        document.body.classList = theme
     },[theme])
 
 
-    return(<>
+    return(
         <button
             onClick={themetoggle}
-            className={`theme-toggle ${theme}`}
+            className="theme-toggle"
         >
-
+            { theme === 'light' ? <BsMoonStarsFill className="theme-toggle__icon" /> : <BsFillSunFill className="theme-toggle__icon" />}
         </button>
-    </>)
+    )
 }
