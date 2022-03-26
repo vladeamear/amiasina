@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { ThemeToggle } from '../ThemeToggle/ThemeToggle'
-import { RiTelegramFill, RiMailFill } from "react-icons/ri";
+import { RiTelegramFill, RiMailFill } from 'react-icons/ri'
 import './navbar.css'
 
 const NavBar = () => {

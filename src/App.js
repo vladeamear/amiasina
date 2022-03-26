@@ -1,13 +1,12 @@
 import './css/style.css'
 import './css/colors.css'
 import './css/fonts.css'
-import './css/icons.css'
 import React, { lazy, useEffect } from "react"
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom"
 import NavBar from './components/NavBar/NavBar'
 import Loading from './components/Loading/Loading'
+import Footer from './components/Footer/Footer'
 import Error from './pages/Error/Error'
-import ToTopButton from './components/ToTopButton/ToTopButton'
 
 const AboutMe = lazy(() => import("./pages/AboutMe/AboutMe"))
 const Exams = lazy(() => import("./pages/Exams/Exams"))
@@ -55,7 +54,7 @@ function App() {
               </React.Suspense>
             } />
           </Routes>
-          <ToTopButton />
+          <Footer />
       </BrowserRouter>
   );
 }
