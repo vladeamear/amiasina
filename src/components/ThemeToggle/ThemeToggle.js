@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { BsMoonStarsFill, BsFillSunFill } from "react-icons/bs"
+import { RiSunFill, RiMoonFill } from "react-icons/ri"
 import './themetoggle.css'
 
 export const ThemeToggle = () => {
@@ -29,7 +29,7 @@ export const ThemeToggle = () => {
             onClick={themetoggle}
             className="theme-toggle"
         >
-            { theme === 'light' ? <BsMoonStarsFill className="theme-toggle__icon" /> : <BsFillSunFill className="theme-toggle__icon" />}
+            { theme === 'light' ? <RiMoonFill className="icon" /> : <RiSunFill className="icon" />}
         </button>
     )
 }
