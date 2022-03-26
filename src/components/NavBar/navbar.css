@@ -10,7 +10,6 @@
     }
     .menu {
         width: 100%;
-        /* max-width: 1140px; */
     }
 }
 @media (min-width: 850px) {
@@ -22,8 +21,9 @@
         display: block;
     }
     .menu {
-        width: calc(100% - 60px);
-        max-width: 1140px;
+        width: 100%;
+        max-width: 1150px;
+        margin: 0 25px;
     }
 }
 
@@ -40,7 +40,7 @@
     background-color: var(--bg-nav);
     backdrop-filter: blur(7px);
     height: 60px;
-    border-bottom: 1px solid var(--dark-blue);
+    box-shadow: 1px 1px 16px -3px rgba(0,0,0,0.1);
 }
 
 .menu{
@@ -72,22 +72,29 @@
 }
 
 
-.menu__tg {
-    background: var(--icon__tg);
-}
-.menu__mail {
-    background: var(--icon__mail);
-}
-.menu__tg, .menu__mail {
+.mobile-menu__network {
     width: 30px;
     height: 30px;
-    border-radius: 5px;
-    background-size: contain;
-    transition: .2s;
+    transition-property: transform;
+    transition-duration: .2s;
 }
-.menu__tg:hover, .menu__mail:hover {
+.mobile-menu__network:hover {
+    width: 30px;
+    height: 30px;
     transform: translateY(-2px);
 }
+.mobile-menu__network .icon {
+    color: var(--dark-blue);
+}
+.mobile-menu__network:hover .icon {
+    color: var(--link-secondary__hover);
+}
+
+/* .icon {
+    width: 100%;
+    height: 100%;
+    color: var(--dark-blue);
+} */
 
 /* Navbar Mobile */
 

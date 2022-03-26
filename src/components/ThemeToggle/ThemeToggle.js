@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react'
+import { RiSunFill, RiMoonFill } from "react-icons/ri"
 import './themetoggle.css'
 
 export const ThemeToggle = () => {
-    const body = document.body
-
     const [theme, setTheme] = useState(
         localStorage.getItem('theme') 
         ? localStorage.getItem('theme') 
@@ -21,16 +20,16 @@ export const ThemeToggle = () => {
     }
 
     useEffect(() => {
-        body.classList = theme
+        document.body.classList = theme
     },[theme])
 
 
-    return(<>
+    return(
         <button
             onClick={themetoggle}
-            className={`theme-toggle ${theme}`}
+            className="theme-toggle"
         >
-
+            { theme === 'light' ? <RiMoonFill className="icon" /> : <RiSunFill className="icon" />}
         </button>
-    </>)
+    )
 }

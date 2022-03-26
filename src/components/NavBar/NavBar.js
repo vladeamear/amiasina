@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { ThemeToggle } from '../ThemeToggle/ThemeToggle'
+import { RiTelegramFill, RiMailFill } from 'react-icons/ri'
 import './navbar.css'
 
 const NavBar = () => {
@@ -27,8 +28,12 @@ const NavBar = () => {
                         <ThemeToggle />
                     </div>
                     <div className="menu__block desktop">
-                        <a className="menu__tg" href="https://t.me/anastasia_pro_geo" target="_blank" rel="noreferrer"> </a>
-                        <a className="menu__mail" href="mailto:anastasia.miasina@ya.ru" target="_blank" rel="noreferrer"> </a>
+                        <a className="mobile-menu__network" href="https://t.me/anastasia_pro_geo" target="_blank" rel="noreferrer">
+                            <RiTelegramFill className="icon" />
+                        </a>
+                        <a className="mobile-menu__network" href="mailto:anastasia.miasina@ya.ru" target="_blank" rel="noreferrer">
+                            <RiMailFill className="icon" />
+                        </a>
                     </div>
                     <div className='menu__block mobile'>
                         <button
@@ -58,8 +63,12 @@ const NavBar = () => {
                     <NavLink className="mobile-menu__link" to="/vpr" onClick={hide}>ВПР</NavLink>
                 </div>
                 <div className="mobile-menu__block__row">
-                    <a className="menu__tg" href="https://t.me/anastasia_pro_geo" target="_blank" rel="noreferrer"> </a>
-                    <a className="menu__mail" href="mailto:anastasia.miasina@ya.ru" target="_blank" rel="noreferrer"> </a>
+                    <a className="mobile-menu__network" href="https://t.me/anastasia_pro_geo" target="_blank" rel="noreferrer">
+                        <RiTelegramFill className="icon" />
+                    </a>
+                    <a className="mobile-menu__network" href="mailto:anastasia.miasina@ya.ru" target="_blank" rel="noreferrer">
+                        <RiMailFill className="icon" />
+                    </a>
                 </div>
             </nav>
         </>

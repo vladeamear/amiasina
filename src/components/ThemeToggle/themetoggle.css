@@ -9,16 +9,23 @@
     transform: none;
     transition-duration: .2s;
     transition-property: transform;
+    padding: 0;
 }
 .theme-toggle:hover {
     transform: translateY(-2px);
 }
-.theme-toggle.light {
+.theme-toggle .icon{
+    color: var(--link-main);
+}
+.theme-toggle:hover .icon{
+    color: var(--link-main__hover);
+}
+/* .theme-toggle.light {
     background-image: url('../../../public/ico/moon.png');
 }
 .theme-toggle.dark {
     background-image: url('../../../public/ico/sun.png');
-}
+} */
 
 @media (max-width: 850px) {
     .theme-toggle {
