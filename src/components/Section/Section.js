@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './section.css'
 var classNames = require('classnames');
 
@@ -41,8 +42,14 @@ export const LinkWrapper = (props) => {
         [`col-${props.col}`]: props.col,
         [`row-${props.row}`]: props.row,
     })
+    let target = props.blank ? "_blank" : "_self"
+
+    if (props.inner) return(
+        <Link to={props.link} className={className}>{props.children}</Link>
+    )
+
     return(
-        <a className={className} href={props.link} target="_blank" rel="noreferrer">
+        <a className={className} href={props.link} target={target} rel="noreferrer">
             {props.children}
         </a>
     )

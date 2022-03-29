@@ -35,12 +35,12 @@ const AboutMe = () => {
                 <blockquote>«Учитель прикасается к&nbsp;вечности: никто не&nbsp;может сказать, где кончается его влияние»</blockquote>
                 <figcaption>Генри Адамс</figcaption>
             </Card>
-            <LinkWrapper col={2} link="https://t.me/anastasia_pro_geo">
+            <LinkWrapper col={2} link="https://t.me/anastasia_pro_geo" blank>
                 Мой телеграмм-канал
                 <br />
                 <span className="highlight">@anastasia_pro_geo</span>
             </LinkWrapper>
-            <LinkWrapper col={1} link="mailto:anastasia.miasina@ya.ru">
+            <LinkWrapper col={1} link="mailto:anastasia.miasina@ya.ru" blank>
                 Напишите мне на почту
                 <br />
                 <span className="highlight">anastasia.miasina@ya.ru</span>

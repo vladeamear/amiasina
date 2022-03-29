@@ -1,6 +1,4 @@
-import { Section } from "../../components/Section/Section"
-import treasure from './treasure.png'
-import './error.css'
+import { Card, LinkWrapper, Section } from "../../components/Section/Section"
 import Helmet from "react-helmet"
 
 const Error = () => {
@@ -11,15 +9,14 @@ const Error = () => {
                 <meta name='description' content='Страница не найдена' />
             </Helmet>
             <Section>
-                <div className="error">
-                    <div className="error-img-wrapper">
-                        <img
-                            src={treasure}
-                            alt="Карта сокровищ"
-                        />
-                    </div>
-                    <h1>Упс! На этой странице нет сокровищ!</h1>
-                </div>
+                <Card col={2} row={24}>
+                    <h1>Упс! На этой странице ничего нет!</h1>
+                    <p>То, что Вам нужно может находиться на другой странице.</p>
+                </Card>
+                <LinkWrapper link="/" col={1} inner>Обо мне</LinkWrapper>
+                <LinkWrapper link="/links" col={1} inner>Полезные ссылки</LinkWrapper>
+                <LinkWrapper link="/exams" col={1} inner>Подготовка к экзаменам</LinkWrapper>
+                <LinkWrapper link="/vpr" col={1} inner>ВПР</LinkWrapper>
             </Section>
         </>
     )
