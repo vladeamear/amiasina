@@ -1,11 +1,7 @@
 :root, body.light {
     --bg-page: #f2ede8;
     --bg-nav: #f6f6fcd7;
-    --bg-card: #fcf9f6;
-
-    --card-box-shadow__up: #fcf6f1;
-    --card-box-shadow__down: #e8e4df;
-    --card-border: #f1daae;
+    --bg-card: #ffffffb0;
 
     --font-color: #000;
 
@@ -19,7 +15,7 @@
 body.dark {
     --bg-page: #221e1b;
     --bg-nav: #323242d7;
-    --bg-card: #ffffff09;
+    --bg-card: #ffffff14;
 
     --card-box-shadow__up: #161411;
     --card-box-shadow__down: #302a25;

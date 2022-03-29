@@ -22,10 +22,10 @@ section {
     grid-row: span 2 / auto;
 }
 .row-3 {
-    grid-row: span 2 / auto;
+    grid-row: span 3 / auto;
 }
 .row-4 {
-    grid-row: span 2 / auto;
+    grid-row: span 4 / auto;
 }
 @media (max-width: 850px) {
     .col-1 {
@@ -36,6 +36,9 @@ section {
     }
     .col-3 {
         grid-column: span 2 / auto;
+    }
+    .row-2 {
+        grid-row: span 3 / auto;
     }
 }
 @media (max-width: 540px) {
@@ -50,17 +53,17 @@ section {
     }
 }
 
-.img-wrapper {
+.imgWrapper {
     height: 100%;
 }
-.img-wrapper img {
+.imgWrapper img {
     width: 100%;
     height: 100%;
     border-radius: 15px;
     object-fit: cover;
 }
 @media (max-width: 540px) {
-    .img-wrapper img {
+    .imgWrapper img {
         border-radius: 0;
     }
 }
@@ -76,5 +79,48 @@ section {
         border-left: none;
         border-right: none;
         padding: 13px 18px;
+    }
+}
+
+.linkWrapper{
+    border-radius: 15px;
+    text-align: center;
+    padding: 40px 25px;
+    text-decoration: none;
+    color: var(--link-main);
+    background: linear-gradient(56deg, var(--bg-nav) 0%, var(--bg-card) 100%);
+    position: relative;
+    transition: color .5s ease-in-out;
+}
+.linkWrapper::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    clip-path: circle(200px at -200px 50%);
+    border-radius: 15px;
+    background: linear-gradient(56deg, var(--link-main__hover) 0%, var(--link-main) 100%);
+    transition-duration: .4s;
+}
+.linkWrapper:hover {
+    color: var(--font-color);
+}
+.linkWrapper:hover:before {
+    transition-duration: 1s;
+    clip-path: circle(100%);
+}
+@media (max-width: 540px) {
+    .linkWrapper, .linkWrapper::before {
+        border-radius: 0;
+    }
+    .linkWrapper {
+        color: var(--font-color);
+    }
+    .linkWrapper::before {
+        clip-path: circle(100%);
     }
 }

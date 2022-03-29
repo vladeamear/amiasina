@@ -1,4 +1,5 @@
 import './section.css'
+var classNames = require('classnames');
 
 export const Section = (props) => {
     return(
@@ -8,10 +9,25 @@ export const Section = (props) => {
     ) 
 }
 
+export const Card = (props) => {
+    let className = classNames({
+        card: true,
+        [`col-${props.col}`]: props.col,
+        [`row-${props.row}`]: props.row,
+    })
+    return(
+        <div className={className}>
+            {props.children}
+        </div>
+    )
+}
+
 export const ImgWrapper = (props) => {
-    let className = 'img-wrapper'
-    if (props.col) className += ` col-${props.col}`
-    if (props.row) className += ` col-${props.row}`
+    let className = classNames({
+        imgWrapper: true,
+        [`col-${props.col}`]: props.col,
+        [`row-${props.row}`]: props.row,
+    })
     return(
         <div className={className}>
             <img src={props.src} alt={props.alt} />
@@ -19,13 +35,15 @@ export const ImgWrapper = (props) => {
     )
 }
 
-export const Card = (props) => {
-    let className = 'card'
-    if (props.col) className += ` col-${props.col}`
-    if (props.row) className += ` col-${props.row}`
+export const LinkWrapper = (props) => {
+    let className = classNames({
+        linkWrapper: true,
+        [`col-${props.col}`]: props.col,
+        [`row-${props.row}`]: props.row,
+    })
     return(
-        <div className={className}>
+        <a className={className} href={props.link} target="_blank" rel="noreferrer">
             {props.children}
-        </div>
+        </a>
     )
 }
