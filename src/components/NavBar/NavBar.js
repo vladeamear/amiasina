@@ -55,6 +55,7 @@ const NavBar = () => {
                     ? 'mobile-nav shown mobile' 
                     : 'mobile-nav mobile'
                 }
+                onClick={toggle}
             >
                 <div className="mobile-menu__block__column">
                     <NavLink className="mobile-menu__link" to="/" onClick={hide}>Обо мне</NavLink>

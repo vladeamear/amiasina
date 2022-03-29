@@ -1,9 +1,9 @@
 import './aboutme.css'
-import avatar from './avatar.jpg'
+import avatar from './images/avatar.jpg'
 import article2020 from './article-2020.pdf'
 import article2021 from './article-2021.pdf'
 import PDFComponent from '../../components/PDFComponent/PDFComponent'
-import { Card, ImgWrapper, Section } from '../../components/Section/Section'
+import { Section, Card, ImgWrapper, LinkWrapper } from '../../components/Section/Section'
 import Helmet from 'react-helmet'
 
 const AboutMe = () => {
@@ -14,8 +14,8 @@ const AboutMe = () => {
             <meta name='description' content='Главная страница личного сайта учителя географии Мясиной Анастасии' />
         </Helmet>
         <Section>
-            <ImgWrapper col={1} src={avatar} alt="Моя фотография" />
-            <Card col={3}>
+            <ImgWrapper col={1} row={2} src={avatar} alt="Моя фотография" />
+            <Card col={3} row={1}>
                 <p>
                     Ра&shy;да при&shy;вет&shy;ст&shy;во&shy;вать Вас на&nbsp;лич&shy;ном сай&shy;те! Ме&shy;ня зо&shy;вут <span className="highlight">Мя&shy;си&shy;на Ана&shy;ста&shy;сия Алек&shy;сан&shy;дров&shy;на</span>, я пре&shy;по&shy;даю гео&shy;гра&shy;фию в шко&shy;ле <span className="nowrap">г. Санкт-Петербург.</span>
                 </p>
@@ -35,6 +35,16 @@ const AboutMe = () => {
                 <blockquote>«Учитель прикасается к&nbsp;вечности: никто не&nbsp;может сказать, где кончается его влияние»</blockquote>
                 <figcaption>Генри Адамс</figcaption>
             </Card>
+            <LinkWrapper col={2} link="https://t.me/anastasia_pro_geo">
+                Мой телеграмм-канал
+                <br />
+                <span className="highlight">@anastasia_pro_geo</span>
+            </LinkWrapper>
+            <LinkWrapper col={1} link="mailto:anastasia.miasina@ya.ru">
+                Напишите мне на почту
+                <br />
+                <span className="highlight">anastasia.miasina@ya.ru</span>
+            </LinkWrapper>
             <Card col={4}>
                 <h1>Образование</h1>
                 <p>

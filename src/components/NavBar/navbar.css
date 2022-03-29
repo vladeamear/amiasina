@@ -216,16 +216,3 @@
 .mobile-menu__link.active {
     color: var(--link-main);
 }
-
-.mobile-menu__tg {
-    background: var(--icon__tg);
-}
-.mobile-menu__mail {
-    background: var(--icon__mail);
-}
-.mobile-menu__tg, .mobile-menu__mail {
-    width: 2em;
-    height: 2em;
-    border-radius: 5px;
-    background-size: contain;
-}
