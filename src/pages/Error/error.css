@@ -1,0 +1,35 @@
+.errorPage__wrapper {
+    max-width: 1200px;
+    padding: 25px;
+    box-sizing: border-box;
+    display: flex;
+    margin: auto;
+
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.errorPage__arrow {
+    font-size: 6em;
+    transform: rotate(-90deg);
+    color: var(--dark-blue);
+}
+@media (max-width: 850px) {
+    .errorPage__wrapper {
+        flex-direction: row-reverse;
+    }
+    .errorPage__arrow {
+        transform: rotate(-90deg) scaleY(-1);
+    }
+}
+@media (max-width: 540px) {
+    .errorPage__wrapper {
+        flex-direction: row-reverse;
+    }
+    .errorPage__arrow {
+        position: fixed;
+        right: 5px;
+        bottom: 50px;
+        transform: rotate(90deg);
+    }
+}

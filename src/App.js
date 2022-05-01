@@ -29,29 +29,28 @@ function App() {
         <NavBar />
         <ScrollToTop />
           <Routes>
-            <Route index path="/" element={
+            <Route exact index path="/" element={
               <React.Suspense fallback={<Loading />}>
                 <AboutMe />
               </React.Suspense>
             } />
-            <Route
-                path="*"
-                element={<Error/>}
-            />
-            <Route path="/vpr" element={
+            <Route exact path="/vpr" element={
               <React.Suspense fallback={<Loading />}>
                 <VPR />
               </React.Suspense>
             } />
-            <Route path="/links" element={
+            <Route exact path="/links" element={
               <React.Suspense fallback={<Loading />}>
                 <Links />
               </React.Suspense>
             } />
-            <Route path="/exams" element={
+            <Route exact path="/exams" element={
               <React.Suspense fallback={<Loading />}>
                 <Exams />
               </React.Suspense>
+            } />
+            <Route path="*" element={
+              <Error />
             } />
           </Routes>
           <Footer />

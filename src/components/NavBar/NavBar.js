@@ -19,7 +19,7 @@ const NavBar = () => {
             <header className="header">
                 <div className="menu">
                     <div className='menu__block desktop'>
-                        <NavLink className="menu__link" to="/">Обо мне</NavLink>
+                        <NavLink className="menu__link" exact to="/">Обо мне</NavLink>
                         <NavLink className="menu__link" to="/links">Полезные ссылки</NavLink>
                         <NavLink className="menu__link" to="/exams">Подготовка к экзаменам</NavLink>
                         <NavLink className="menu__link" to="/vpr">ВПР</NavLink>
