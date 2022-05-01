@@ -2,6 +2,7 @@ import './aboutme.css'
 import avatar from './images/avatar.jpg'
 import article2020 from './article-2020.pdf'
 import article2021 from './article-2021.pdf'
+import article2022 from './article-2022.pdf'
 import PDFComponent from '../../components/PDFComponent/PDFComponent'
 import { Section, Card, ImgWrapper, LinkWrapper } from '../../components/Section/Section'
 import Helmet from 'react-helmet'
@@ -89,6 +90,11 @@ const AboutMe = () => {
                     link={article2021}
                     name="ПРАКТИЧЕСКИЙ АСПЕКТ ИСПОЛЬЗОВАНИЯ СУБЪЕКТНО-ОРИЕНТИРОВАННЫХ ТЕХНОЛОГИЙ В ОБРАЗОВАТЕЛЬНОМ ПРОЦЕССЕ ШКОЛЬНИКОВ"
                     size="808Кб"
+                />
+                <PDFComponent
+                    link={article2022}
+                    name="ФОРМИРОВАНИЕ МЕЖКУЛЬТУРНОЙ КОМПЕТЕНЦИИ СРЕДИ УЧЕНИКОВ СРЕДНЕЙ ШКОЛЫ НА УРОКАХ ИСТОРИИ И ГЕОГРАФИИ"
+                    size="157Кб"
                 />
             </Card>
         </Section>

@@ -1,5 +1,6 @@
-import { Card, LinkWrapper, Section } from "../../components/Section/Section"
-import Helmet from "react-helmet"
+import Helmet from 'react-helmet'
+import { IoArrowRedoOutline } from 'react-icons/io5'
+import './error.css'
 
 const Error = () => {
     return(
@@ -8,16 +9,13 @@ const Error = () => {
                 <title>404</title>
                 <meta name='description' content='Страница не найдена' />
             </Helmet>
-            <Section>
-                <Card col={2} row={24}>
+            <div className='errorPage__wrapper'>
+                <div className='errorPage__arrow'><IoArrowRedoOutline /></div>
+                <div className='errorPage__text'>
                     <h1>Упс! На этой странице ничего нет!</h1>
                     <p>То, что Вам нужно может находиться на другой странице.</p>
-                </Card>
-                <LinkWrapper link="/" col={1} inner>Обо мне</LinkWrapper>
-                <LinkWrapper link="/links" col={1} inner>Полезные ссылки</LinkWrapper>
-                <LinkWrapper link="/exams" col={1} inner>Подготовка к экзаменам</LinkWrapper>
-                <LinkWrapper link="/vpr" col={1} inner>ВПР</LinkWrapper>
-            </Section>
+                </div>
+            </div>
         </>
     )
 }
